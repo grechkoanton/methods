@@ -12,7 +12,7 @@ public class Main {
         checkOS(clientOS, currentYear);
 
         printTask(3);
-        int deliveryDistance = 20;
+        int deliveryDistance = 95;
         checkTheDistanceFromTheOfficeToDeliveryAddress(deliveryDistance);
         int days = checkTheDistanceFromTheOfficeToDeliveryAddress(deliveryDistance);
         System.out.println("Потребуется дней на доставку: " + days);
@@ -54,7 +54,7 @@ public class Main {
         } else if (distance >= 20 && distance < 60) {
             return 2; //daysDeliveryInterval1 + 2;
         } else if (distance >= 60 && distance < 100) {
-            return 3; //daysDeliveryInterval1 + 3;
+            return 3; // daysDeliveryInterval1 + 3;
         } else {
             return 0;
         }
